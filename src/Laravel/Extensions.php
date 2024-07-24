@@ -8,7 +8,7 @@ use Illuminate\Database\Eloquent\Casts\AsEnumArrayObject;
 use Illuminate\Database\Eloquent\Casts\AsEnumCollection;
 
 /**
- * Add useful methods to Enum for Laravel
+ * Extensions trait for Laravel
  * 
  * @package YukataRm\Laravel\Enum
  */
@@ -21,7 +21,7 @@ trait Extensions
      *----------------------------------------*/
 
     /**
-     * setting Enum as array for Model's Casts
+     * setting enum as array for casts in model
      * 
      * @return string
      */
@@ -33,7 +33,7 @@ trait Extensions
     }
 
     /**
-     * setting Enum as collection for Model's Casts
+     * setting enum as collection for casts in model
      * 
      * @return string
      */

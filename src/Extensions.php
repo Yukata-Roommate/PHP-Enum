@@ -3,7 +3,7 @@
 namespace YukataRm\Enum;
 
 /**
- * Add useful methods to Enum
+ * Extensions trait
  * 
  * @package YukataRm\Enum
  * 
@@ -16,13 +16,13 @@ trait Extensions
      *----------------------------------------*/
 
     /**
-     * Assert the class uses Enum
+     * assert the class uses Enum
      * 
      * @return void
      */
     private static function assertEnum(): void
     {
-        if (!enum_exists(self::class)) throw new \BadMethodCallException("This trait can only be used in Enum");
+        if (!enum_exists(self::class)) throw new \BadMethodCallException("this trait can only be used in Enum");
     }
 
     /*----------------------------------------*
@@ -30,7 +30,7 @@ trait Extensions
      *----------------------------------------*/
 
     /**
-     * make Enum from name
+     * make enum from name
      * 
      * @param int|string $name
      * @return static
@@ -47,7 +47,7 @@ trait Extensions
     }
 
     /**
-     * make Enum from name
+     * make enum from name
      * if failed, return null
      * 
      * @param int|string $name
@@ -103,8 +103,6 @@ trait Extensions
     {
         return array_reverse(self::names());
     }
-
-
 
     /*----------------------------------------*
      * Values
