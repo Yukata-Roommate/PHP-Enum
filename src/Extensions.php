@@ -53,7 +53,7 @@ trait Extensions
      * @param int|string $name
      * @return static|null
      */
-    public static function tryFromName(int|string $name): ?static
+    public static function tryFromName(int|string $name): static|null
     {
         try {
             return self::fromName($name);

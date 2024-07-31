@@ -3,7 +3,7 @@
     "description": "Make easier to use PHP Enum",
     "type": "library",
     "license": "MIT",
-    "version": "1.0.1",
+    "version": "1.0.2",
     "autoload": {
         "psr-4": {
             "YukataRm\\Enum\\": "src",
