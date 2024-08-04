@@ -16,7 +16,7 @@ trait Extensions
      *----------------------------------------*/
 
     /**
-     * assert the class uses Enum
+     * assert class uses Enum
      * 
      * @return void
      */
